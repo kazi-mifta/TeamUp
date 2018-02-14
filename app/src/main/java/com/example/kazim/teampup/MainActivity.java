@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText expert, medium, beginner;
     String strExpert,strMedium,strBeginner;
-    Button teamUp;
+    Button teamUp,toss;
 
 
     @Override
@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         teamUp = findViewById(R.id.button);
 
+        toss = findViewById(R.id.btn_toss);
 
         teamUp.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -53,6 +54,14 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+        toss.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent toss = new Intent(MainActivity.this,TossActivity.class);
+                startActivity(toss);
+            }
+        });
 
 
     }

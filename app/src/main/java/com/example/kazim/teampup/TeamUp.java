@@ -30,7 +30,7 @@ public class TeamUp extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.team);
+        setContentView(R.layout.activity_team);
 
         Intent intent = getIntent();
 

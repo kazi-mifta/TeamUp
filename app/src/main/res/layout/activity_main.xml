@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.kazim.teampup.MainActivity">
@@ -28,6 +29,7 @@
         app:layout_constraintRight_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/t_expert"
         android:layout_margin="10dp"
+        android:inputType="textPersonName"
          />
     <TextView
         android:id="@+id/t_medium"
@@ -37,7 +39,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/expert"
-        android:layout_margin="10dp"/>
+        android:layout_margin="10dp" />
     <EditText
         android:id="@+id/medium"
         android:layout_width="match_parent"
@@ -49,6 +51,7 @@
         app:layout_constraintRight_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/t_medium"
         android:layout_margin="10dp"
+        android:inputType="textPersonName"
         />
     <TextView
         android:id="@+id/t_beginner"
@@ -70,13 +73,16 @@
         app:layout_constraintRight_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/t_beginner"
         android:layout_margin="10dp"
+        android:inputType="textPersonName"
         />
+
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:background="@drawable/round_btn"
         android:text="TeamUp"
         app:layout_constraintTop_toBottomOf="@+id/beginner"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -85,6 +91,22 @@
         android:backgroundTint="@color/colorPrimary"
         android:textColor="#FFFFFF"
         android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btn_toss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Toss"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#FFFFFF"
+        />
 
     <TextView
         android:id="@+id/t_req"
@@ -96,7 +118,9 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button"
         android:layout_marginTop="70dp"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
 
 
 
