@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TeampUp</string>
+    <string name="req">Please Use Coma(,) after Every Player Name</string>
+</resources>
